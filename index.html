@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JJK Wafer Cards S6 — Collection Tracker (28)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Jujutsu Kaisen — Wafer Card Collection (Series 6)</h1>
+      <p class="subtitle">Simple, local-only tracker for 28 physical cards</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="collection" class="section collection">
+      <div class="container">
+        <div class="toolbar">
+          <div class="progress" aria-live="polite" id="progressText">Owned: 0 / 28</div>
+          <div class="controls">
+            <button id="toggleAllBtn" class="btn" type="button">Toggle All</button>
+            <button id="clearAllBtn" class="btn btn-ghost" type="button">Clear All</button>
+          </div>
+        </div>
+
+        <!-- Grid of cards (loaded dynamically) -->
+        <div class="grid" id="cardGrid" aria-label="Card Collection">
+          <p class="loading">Loading cards...</p>
+        </div>
+
+        <p class="hint">Place your card scans in <code>/images/01.jpg</code> → <code>/images/28.jpg</code>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Local-only tracker. Data stored in your browser via localStorage.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Load cards from external file
+    fetch('cards.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('cardGrid').innerHTML = html;
+        // Wait for cards to load, then activate script.js logic
+        const script = document.createElement('script');
+        script.src = 'js/script.js';
+        document.body.appendChild(script);
+      })
+      .catch(() => {
+        document.getElementById('cardGrid').innerHTML = '<p class="error">Failed to load cards.</p>';
+      });
+  </script>
+</body>
+</html>
