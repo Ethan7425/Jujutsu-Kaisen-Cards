@@ -1,0 +1,88 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JJK Wafer Cards — Local Test (6 Cards)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Jujutsu Kaisen — Wafer Card Collection (Local Test)</h1>
+      <p class="subtitle">Quick local preview with 6 sample cards</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="collection" class="section collection">
+      <div class="container">
+        <div class="toolbar">
+          <div class="progress" id="progressText">Owned: 0 / 6</div>
+          <div class="controls">
+            <button id="toggleAllBtn" class="btn" type="button">Toggle All</button>
+            <button id="clearAllBtn" class="btn btn-ghost" type="button">Clear All</button>
+          </div>
+        </div>
+
+        <!-- Grid with 6 sample cards -->
+        <div class="grid" id="cardGrid">
+          <button class="card rarity-normal" data-id="1" data-rarity="normal">
+            <span class="rarity-chip">Normal - 01</span>
+            <span class="card-face">
+              <img class="card-img" src="images/01.jpg" alt="Card 01 — Normal - 01">
+              <!-- <span class="card-num">01</span><span class="card-title">Card 01</span> -->
+            </span><span class="owned-badge">Owned</span>
+          </button>
+
+          <button class="card rarity-normal" data-id="2" data-rarity="normal">
+            <span class="rarity-chip">Normal</span>
+            <span class="card-face">
+              <img class="card-img" src="images/02.jpg" alt="Card 02 — Normal">
+            </span><span class="owned-badge">Owned</span>
+          </button>
+
+          <button class="card rarity-normal" data-id="3" data-rarity="normal">
+            <span class="rarity-chip">Normal</span>
+            <span class="card-face">
+              <img class="card-img" src="images/03.jpg" alt="Card 03 — Normal">
+            </span><span class="owned-badge">Owned</span>
+          </button>
+
+          <button class="card rarity-normal" data-id="4" data-rarity="normal">
+            <span class="rarity-chip">Normal</span>
+            <span class="card-face">
+              <img class="card-img" src="images/04.jpg" alt="Card 04 — Normal">
+            </span><span class="owned-badge">Owned</span>
+          </button>
+
+          <button class="card rarity-rare" data-id="5" data-rarity="rare">
+            <span class="rarity-chip">Rare</span>
+            <span class="card-face">
+              <img class="card-img" src="images/05.jpg" alt="Card 05 — Rare">
+            </span><span class="owned-badge">Owned</span>
+          </button>
+
+          <button class="card rarity-sr" data-id="6" data-rarity="sr">
+            <span class="rarity-chip">SR</span>
+            <span class="card-face">
+              <img class="card-img" src="images/06.jpg" alt="Card 06 — SR">
+            </span><span class="owned-badge">Owned</span>
+          </button>
+        </div>
+
+        <p class="hint">Images go in <code>/images/01.jpg</code>–<code>/images/06.jpg</code>. Edit locally, push when ready.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Local test version — Data saves automatically in your browser</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
