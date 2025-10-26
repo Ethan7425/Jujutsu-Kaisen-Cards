@@ -1,0 +1,251 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JJK Wafer Cards</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Jujutsu Kaisen — Wafer Card Collection</h1>
+      <!-- <p class="subtitle">Quick local preview with 6 sample cards</p> -->
+    </div>
+    <!-- Back to Home button -->
+    <!-- <a href="index.html" class="back-btn" id="backBtn" title="Return to Home">← Home</a> -->
+    <button class="back-btn" id="backBtn">Home</button>
+  </header>
+
+
+
+
+<main>
+  <section id="collection" class="section collection">
+    <div class="container">
+      <div class="toolbar">
+        <div class="progress" id="progressText">Owned: 0 / 28</div>
+        <div class="controls">
+          <button id="toggleAllBtn" class="btn" type="button">Toggle All</button>
+          <button id="clearAllBtn" class="btn btn-ghost" type="button">Clear All</button>
+        </div>
+      </div>
+
+      <div class="grid" id="cardGrid">
+        <!-- Normal (1–14) -->
+        <button class="card rarity-normal" data-id="1" data-rarity="normal">
+          <span class="rarity-chip">Normal - 01</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/01.jpg" alt="Card 01 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="2" data-rarity="normal">
+          <span class="rarity-chip">Normal - 02</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/02.jpg" alt="Card 02 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="3" data-rarity="normal">
+          <span class="rarity-chip">Normal - 03</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/03.jpg" alt="Card 03 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="4" data-rarity="normal">
+          <span class="rarity-chip">Normal - 04</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/04.jpg" alt="Card 04 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="5" data-rarity="normal">
+          <span class="rarity-chip">Normal - 05</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/05.jpg" alt="Card 05 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="6" data-rarity="normal">
+          <span class="rarity-chip">Normal - 06</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/06.jpg" alt="Card 06 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="7" data-rarity="normal">
+          <span class="rarity-chip">Normal - 07</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/07.jpg" alt="Card 07 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="8" data-rarity="normal">
+          <span class="rarity-chip">Normal - 08</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/08.jpg" alt="Card 08 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="9" data-rarity="normal">
+          <span class="rarity-chip">Normal - 09</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/09.jpg" alt="Card 09 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="10" data-rarity="normal">
+          <span class="rarity-chip">Normal - 10</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/10.jpg" alt="Card 10 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="11" data-rarity="normal">
+          <span class="rarity-chip">Normal - 11</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/11.jpg" alt="Card 11 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="12" data-rarity="normal">
+          <span class="rarity-chip">Normal - 12</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/12.jpg" alt="Card 12 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="13" data-rarity="normal">
+          <span class="rarity-chip">Normal - 13</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/13.jpg" alt="Card 13 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-normal" data-id="14" data-rarity="normal">
+          <span class="rarity-chip">Normal - 14</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/14.jpg" alt="Card 14 — Normal">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <!-- Rare (15–22) -->
+        <button class="card rarity-rare" data-id="15" data-rarity="rare">
+          <span class="rarity-chip">Rare - 15</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/15.jpg" alt="Card 15 — Rare">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-rare" data-id="16" data-rarity="rare">
+          <span class="rarity-chip">Rare - 16</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/16.jpg" alt="Card 16 — Rare">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-rare" data-id="17" data-rarity="rare">
+          <span class="rarity-chip">Rare - 17</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/17.jpg" alt="Card 17 — Rare">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-rare" data-id="18" data-rarity="rare">
+          <span class="rarity-chip">Rare - 18</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/18.jpg" alt="Card 18 — Rare">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-rare" data-id="19" data-rarity="rare">
+          <span class="rarity-chip">Rare - 19</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/19.jpg" alt="Card 19 — Rare">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-rare" data-id="20" data-rarity="rare">
+          <span class="rarity-chip">Rare - 20</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/20.jpg" alt="Card 20 — Rare">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-rare" data-id="21" data-rarity="rare">
+          <span class="rarity-chip">Rare - 21</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/21.jpg" alt="Card 21 — Rare">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-rare" data-id="22" data-rarity="rare">
+          <span class="rarity-chip">Rare - 22</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/22.jpg" alt="Card 22 — Rare">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <!-- SR (23–26) -->
+        <button class="card rarity-sr" data-id="23" data-rarity="sr">
+          <span class="rarity-chip">SR - 23</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/23.jpg" alt="Card 23 — SR">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-sr" data-id="24" data-rarity="sr">
+          <span class="rarity-chip">SR - 24</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/24.jpg" alt="Card 24 — SR">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-sr" data-id="25" data-rarity="sr">
+          <span class="rarity-chip">SR - 25</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/25.jpg" alt="Card 25 — SR">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-sr" data-id="26" data-rarity="sr">
+          <span class="rarity-chip">SR - 26</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/26.jpg" alt="Card 26 — SR">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <button class="card rarity-sr" data-id="27" data-rarity="sr">
+          <span class="rarity-chip">SR - 27</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/27.jpg" alt="Card 27 — SR">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+
+        <!-- SEC (27–28) -->
+        
+        <button class="card rarity-sec" data-id="28" data-rarity="sec">
+          <span class="rarity-chip">SEC - 28</span>
+          <span class="card-face">
+            <img class="card-img" src="../images/28.jpg" alt="Card 28 — SEC">
+          </span><span class="owned-badge">Owned</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Local test version — Data saves automatically in your browser</small>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/nav.js"></script>
+</body>
+</html>
